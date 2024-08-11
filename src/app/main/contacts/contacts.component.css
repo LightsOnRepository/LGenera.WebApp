@@ -1,0 +1,31 @@
+section {
+    margin-block-start: 48px;
+    padding-block-end: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-block-end: 24px;
+}
+
+.main-contact-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 700px)
+{
+    .main-contact-info  {
+        display: block;
+    }
+}
+
+.global-map {
+    max-height: 300px;
+    min-height: 200px;
+}
+
+.contactsInfo {
+    display: grid;
+}

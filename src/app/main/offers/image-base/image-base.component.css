@@ -1,0 +1,21 @@
+label {
+    width: 100%;
+    max-width: 460px;
+    min-width: min-content;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+img {
+    max-height: 200px;  
+}
+
+.service-image {
+    height: 200px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+

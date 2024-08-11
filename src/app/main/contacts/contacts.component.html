@@ -1,0 +1,20 @@
+<section>
+    <h2>{{ title() }}</h2>
+    <div class="main-contact-info">
+
+        <google-map
+            height="350px"
+            width="800px"
+            [center]="googleMap().center"
+            [zoom]="googleMap().zoom"
+            >
+        </google-map>
+
+        <div class="contactsInfo">
+            @for(contactInfo of contactsInfo(); track contactInfo) {
+                <app-contact-info [image]="contactInfo"></app-contact-info>
+            }
+        </div>
+    </div>
+
+</section>

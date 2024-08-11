@@ -1,0 +1,16 @@
+<div class="image-container">
+    <img [src]="image().src" [alt]="image().alt">
+    @if (isPhoneImage()) {
+        <div class="phonesNumber">
+            @for(phone of parsedPhones(); track phone.phoneNumber) {
+                <a href="tel:{{ phone.phoneNumber }}" (click)="onPhoneNumberClick($event, phone.phoneNumber)" >{{ phone.phoneNumber+'\n'}}</a>
+            } @empty {
+                <div class="spinner-container">
+                    <mat-spinner></mat-spinner>
+                </div>
+            }
+        </div>
+    } @else {
+        <label> {{ image().label }}</label>
+    }
+</div>

@@ -1,0 +1,35 @@
+label {
+    min-width: max-content;
+    font-size: 1.5rem;
+    color: rgba(0,0,0,.54);
+    line-height: 2.2rem;
+    margin-left: 8px;
+    white-space: pre-line;
+    font-weight: bold;
+}
+
+img {
+    margin: 0, 40px, 80px, 70px;
+    margin-bottom: 80px;
+    margin-right: 40px;
+    margin-left: 70px;
+}
+
+.service-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    background-color: #4E6AD9;
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f4f4f4;
+    padding: 20px;
+    position: relative;
+    margin-top: 32px;
+}

@@ -1,0 +1,17 @@
+<section>
+    <h2>{{ title() }}</h2>
+
+    <div class="images">
+        @for (serviceImage of serviceImageList(); track serviceImage.src) {
+            <app-image-base [image]="serviceImage"></app-image-base>
+        } @empty {
+            <p class="fallback">No images are available</p>
+        }
+    </div>
+
+    <div class="wrapper-button">
+        <button appButton (click)="toggleNavigation()" >{{ nameServiceButton() }}</button>
+    </div>
+    
+    <router-outlet></router-outlet>
+</section>

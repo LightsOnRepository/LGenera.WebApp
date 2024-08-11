@@ -1,0 +1,6 @@
+<section id="service-option-container">
+     <img [src]="generatorImage().src" [alt]="generatorImage().alt">
+     @for(serviceDescription of servicesDescription(); track serviceDescription.headerText) {
+          <app-detail [serviceDescription]="serviceDescription"></app-detail>
+     }
+</section>

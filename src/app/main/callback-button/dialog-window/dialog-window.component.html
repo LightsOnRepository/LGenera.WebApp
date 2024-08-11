@@ -1,0 +1,30 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="inputs-form">
+  <div class="wrapper-padding">
+    <div class="input-fields">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Як до вас звертатись?</mat-label>
+        <input matInput id="name" formControlName="name">
+      </mat-form-field>
+    
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Ваш номер телефону</mat-label>
+        <input matInput id="phone" type="tel" formControlName="phone">
+      </mat-form-field>
+    
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Опишіть проблему</mat-label>
+        <textarea matInput id="text" formControlName="text"></textarea>
+      </mat-form-field>
+      
+      <p>З вами якнайшвидше з'яжеться наш оператор</p>
+  </div>
+  
+  <div mat-dialog-actions align="center">
+    <button class="yellow-button" type="submit">
+      ЗАМОВИТИ ВИКЛИК
+      <span><img [src]="phoneImage().src" [alt]="phoneImage().alt"></span>
+    </button>
+  </div>
+  </div>
+  
+</form>

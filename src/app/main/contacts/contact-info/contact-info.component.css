@@ -1,0 +1,35 @@
+label, a {
+    min-width: max-content;
+    font-size: 1.5rem;
+    color: rgba(0,0,0,.54);
+    line-height: 1.8rem;
+    margin-left: 16px;
+    white-space: pre-line;
+    font-weight: bold;
+}
+
+img {
+    display: flex;
+    width: 64px;
+}
+
+.image-container {
+    display: flex;
+    margin-top: 32px;
+}
+
+
+.phonesNumber {
+    display: block;
+}
+
+.phonesNumber a{
+    line-height: 2.2rem;
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; 
+  }

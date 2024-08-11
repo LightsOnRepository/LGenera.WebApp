@@ -1,0 +1,32 @@
+button {
+    background-color: #FFDD00;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Exo_2', sans-serif;
+}
+
+button:hover {
+    background-color: #ECCB00;
+    cursor: pointer;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.callback-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    padding-right: 30px;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    z-index: 1000;
+}
